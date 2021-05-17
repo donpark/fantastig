@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "forceConsistentCasingInFileNames": true,
+        "importHelpers": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strict": false,
+        "strictNullChecks": false,
+        "strictPropertyInitialization": false,
+
+        "jsx": "preserve",
+        "lib": ["esnext", "dom", "dom.iterable"],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "target": "esnext",
+
+        "baseUrl": ".",
+        "paths": {
+            "components": ["components"],
+            "models": ["models"],
+            "styles": ["styles"]
+        }
+    },
+    "include": [
+        "next-env.d.ts",
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx",
+        "pages/api/auth/[...nextauth].js",
+        "pages/_app.tsx"
+    ],
+    "exclude": ["node_modules"]
+}
